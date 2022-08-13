@@ -39,8 +39,7 @@ public class Teacher {
                 break;
             case 4 : stringRating = "хорошо";
                 break;
-            case 5 : stringRating = "отлично";
-                break;
+            default:  stringRating = "отлично";
         }
         System.out.println("Преподаватель "+ name + " оценил студента с именем " + someStudent.getName() + " по предмету "
                 + lesson + " на оценку " + stringRating);

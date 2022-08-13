@@ -4,15 +4,15 @@ public class Task1 {
         Motorbike myBike = new Motorbike("R8","Black",2010);
 
         myBike.info();
-        System.out.println(myBike.yearDifference(2011));
+        System.out.println(myBike.yearDifference(2020));
 
         Car myCar = new Car();
         myCar.setModel("X5");
         myCar.setColor("White");
-        myCar.setYear(1993);
+        myCar.setYear(2010);
 
         myCar.info();
-        System.out.println(myCar.yearDifference(1990));
+        System.out.println(myCar.yearDifference(2020));
 
     }
 }

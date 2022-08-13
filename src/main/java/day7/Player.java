@@ -5,7 +5,7 @@ public class Player {
    private static final  int MAX_AMOUNT_PLAYERS =6;
    public static final int MAX_STAMINA = 100;
     public static final int MIN_STAMINA = 0;
-    public static int countPlayers = 0;
+    private static int countPlayers = 0;
 
     public int getStamina() {
         return stamina;
@@ -26,7 +26,7 @@ public class Player {
         if(stamina > 0) {
             stamina -= 1;
         }
-        if(stamina == 0 || stamina < 0){
+        if(stamina == 0 && countPlayers  == MAX_AMOUNT_PLAYERS){
             countPlayers--;
         }
     }
