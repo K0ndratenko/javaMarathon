@@ -6,7 +6,7 @@ public class Player {
    public static final int MAX_STAMINA = 100;
     public static final int MIN_STAMINA = 0;
     private static int countPlayers = 0;
-
+    private boolean playerIsOn = true;  // Тру когда игрок на поле
     public int getStamina() {
         return stamina;
     }
@@ -26,8 +26,9 @@ public class Player {
         if(stamina > 0) {
             stamina -= 1;
         }
-        if(stamina == 0 && countPlayers  == MAX_AMOUNT_PLAYERS){
+        if(stamina == 0 && playerIsOn){
             countPlayers--;
+            playerIsOn = false;
         }
     }
 

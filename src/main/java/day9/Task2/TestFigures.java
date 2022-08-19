@@ -15,8 +15,8 @@ public class TestFigures {
     }
     public static double calculateRedArea(Figure[] figures){
         double sumOfArea = 0;
-        for(Figure figure: figures){
-            if(figure.getColor().equals("Red")){
+        for(Figure figure: figures){   //"Red".equals(figure.getColor())
+            if("Red".equals(figure.getColor())){
                 sumOfArea+=figure.area();
             }
 

@@ -14,11 +14,7 @@ public class Task2 {
         for(int i = 0;i<MAX_PLAYERS;i++){
            int randomStaminaForPlayer= randomValue.nextInt(101 -90) +90;
             listOfPlayers.add(new Player(randomStaminaForPlayer));
-/*Я тут не пониммаю как это работает под капотом ? если мы создаём обьект с одинаковым именет он будет
- ссылаться на
- последнее
-созданный . а если мы пушим в массив то это как то работает по другому ?
-* */
+
         }
         Player.info();
         while(listOfPlayers.get(0).getStamina()>0){
@@ -26,6 +22,7 @@ public class Task2 {
 
             System.out.println(listOfPlayers.get(0).getStamina());
         }
+
 
         Player.info();
         System.out.println(  Player.getCountPlayers());
